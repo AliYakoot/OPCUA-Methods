@@ -35,7 +35,7 @@ class segmentdisplay:
     def set_pinlist(self, pinlist):
         """Zum nachtraeglichen Veraendern der Pinliste"""
         if len(pinlist) != 4:
-            print "Pinliste muss 4 Elemente haben!"
+            print("Pinliste muss 4 Elemente haben!")
             self.__pinlist=[]
         else:
             self.__pinlist=pinlist
@@ -48,7 +48,7 @@ class segmentdisplay:
     def set_display(self, value):
         """Setzt display auf value"""
         if value > 9 or value < 0:
-            print "Geht nicht! Kann nur bis 9 anzeigen"
+            print("Geht nicht! Kann nur bis 9 anzeigen")
             return -1
         tmp=0
         for i in self.__pinlist:
